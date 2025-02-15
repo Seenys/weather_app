@@ -8,6 +8,7 @@
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "scheme": "ClimaApp",
+
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -27,7 +28,13 @@
       "bundler": "metro"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
+        }
+      ]
     ]
   }
 }

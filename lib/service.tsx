@@ -3,6 +3,7 @@ import axios from "axios";
 import { Weather, Forecast, Citys } from "../types/types";
 
 const API_KEY = process.env.EXPO_PUBLIC_WEATHER_API_KEY;
+
 const BASE_URL = "https://api.weatherapi.com/v1";
 
 if (!API_KEY) {
