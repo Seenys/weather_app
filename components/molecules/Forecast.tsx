@@ -1,8 +1,8 @@
 import { Image, ScrollView, Text, View } from "react-native";
-import { Icons } from "../Icons";
+import { Icons } from "../atoms/Icons";
 import { theme } from "../../theme";
 import { getDayName, getImageSource } from "../../utils/utils";
-import { FC } from "react";
+import React, { FC } from "react";
 
 interface ForecastProps {
   forecast: any[];
@@ -24,6 +24,7 @@ const Forecast: FC<ForecastProps> = ({ forecast }) => {
           return (
             <View
               key={day.date}
+              testID="forecast-item"
               className="justify-center items-center w-24 rounded-3xl ml-2 py-3 gap-1"
               style={{ backgroundColor: theme.bgWhite(0.15) }}
             >
@@ -34,7 +35,7 @@ const Forecast: FC<ForecastProps> = ({ forecast }) => {
                 source={getImageSource(day.condition)}
                 className="w-12 h-12"
               />
-              <Text className="text-white font-semibold text-base">
+              <Text className="text-white font-semibold text-base tracking-widest">
                 {day.condition}
               </Text>
               <Text className="text-white font-semibold text-base">

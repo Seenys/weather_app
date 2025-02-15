@@ -34,7 +34,11 @@ const WeatherActual: FC<WeatherActualProps> = ({
         </Text>
       </Text>
       <View className="flex-row justify-center">
-        <Image source={getImageSource(icon || "")} className="w-52 h-52" />
+        <Image
+          source={getImageSource(icon || "")}
+          className="w-52 h-52"
+          testID="weather-icon"
+        />
       </View>
       <View className="scroll-py-2">
         <Text className="text-center font-bold text-white text-6xl ml-5">

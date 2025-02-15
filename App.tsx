@@ -1,13 +1,23 @@
-import { StatusBar } from "expo-status-bar";
-import { View } from "react-native";
+import { PropsWithChildren } from "react";
+import { StyleSheet, Text, View } from "react-native";
 
-import Home from "./app/index";
+export const CustomText = ({ children }: PropsWithChildren) => (
+  <Text>{children}</Text>
+);
 
-export default function App() {
+export default function HomeScreen() {
   return (
-    <View className="flex-1 items-center justify-center">
-      <StatusBar style="auto" />
-      <Home />
+    <View style={styles.container}>
+      <CustomText>Welcome!</CustomText>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});

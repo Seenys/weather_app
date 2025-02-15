@@ -10,7 +10,7 @@ import {
   getWeatherForecast,
 } from "../lib/service";
 
-import Suggestions from "../components/Suggestions";
+import Suggestions from "../components/atoms/Suggestions";
 import { Citys, Weather, Forecast as ForecastType } from "../types/types";
 
 import * as Location from "expo-location";
@@ -99,7 +99,7 @@ export default function Page() {
 
   return (
     <Screens>
-      <View className="flex-1">
+      <View className="flex-1" testID="page-container">
         <Image
           source={require("../assets/images/bg.png")}
           blurRadius={70}
@@ -111,11 +111,14 @@ export default function Page() {
               <SearchBar
                 onChangeSearch={handleDebounce}
                 searchQuery={searchQuery}
+                testID="search-bar-input"
               />
+
               {suggestions.length > 0 && (
                 <Suggestions
                   suggestions={suggestions}
                   onSelect={handleSelectSuggestion}
+                  testID="suggestions-container"
                 />
               )}
             </View>

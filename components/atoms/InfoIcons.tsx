@@ -22,7 +22,11 @@ const InfoIcons: FC<InfoIconsProps> = ({ icon, info }) => {
 
   return (
     <View className="flex-row gap-4 items-center">
-      <Image source={getImageSource(icon)} className="w-6 h-6" />
+      <Image
+        source={getImageSource(icon)}
+        className="w-6 h-6"
+        testID="info-icon-image"
+      />
       <Text className="text-white font-semibold text-base">{info}</Text>
     </View>
   );

@@ -1,5 +1,5 @@
 import Feather from "@expo/vector-icons/Feather";
-import { FC } from "react";
+import React, { FC } from "react";
 
 interface IconsProps {
   name: string | any;
@@ -8,5 +8,5 @@ interface IconsProps {
 }
 
 export const Icons: FC<IconsProps> = ({ name, size, color }) => {
-  return <Feather size={size} color={color} name={name} />;
+  return <Feather testID="icon" size={size} color={color} name={name} />;
 };
