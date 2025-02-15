@@ -6,9 +6,7 @@
 
 ## 📸 Screenshots
 
-| ![Home Screen](screenshots/home.png) | ![Search Screen](screenshots/search.png) | ![Forecast Screen](screenshots/forecast.png) |
-|--------------------------------------|------------------------------------------|----------------------------------------------|
-| **Home Screen**                      | **Coverage**                             | **Forecast Screen**                          |
+<img src="https://github.com/user-attachments/assets/04555311-d7c1-443a-b7a6-adc04e615041" alt="Screenshot_1739647263" width="300" height="600">
 
 ---
 
@@ -71,6 +69,8 @@ Follow these steps to set up the project locally:
 
 ---
 ## 🧪 Running Tests
+
+<img src="https://github.com/user-attachments/assets/f99b0f10-f363-4748-89e1-c2f2d264ef8d" alt="Screenshot_1739647263" width="900" height="600">
 
 **To run the unit and integration tests, use the following command**:
 ```bash
